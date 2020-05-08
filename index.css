@@ -1,0 +1,38 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* NAVBAR */
+
+h1 {
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    overflow: hidden;
+    background-color: rgb(58, 58, 58);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: lightslategray;
+    text-align: center;
+    padding: 10px 12px;
+    margin-top: 1.3em;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: whitesmoke;
+}
+
+.active {
+    color: whitesmoke;
+}

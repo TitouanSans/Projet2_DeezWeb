@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Deez Web</title>
+  <link rel="stylesheet" href="css/index.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <navbar>
+    <ul>
+      <li><h1>Deezweb</h1></li>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="recherche.html">Rechercher un titre</a></li>
+      <li><a class="active" href="favoris.html">Mes favoris</a></li>
+    </ul>
+  </navbar>
+
+    <div>
+        <h2>Mes favoris</h2>
+        <p>Liste de mes titres favoris</p>
+        <hr>
+        <h3>Aucun favoris dans votre liste ...</h3>
+    </div>
+
+  <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+  <script src="https://unpkg.com/jquery"></script>
+      <script>
+        $.ajax({
+          url: `https://api.deezer.com/search?q=eminem&output=jsonp`,
+          dataType: "jsonp",
+        }).then((result) => {
+          console.log("Résultat :", result.data);
+        });
+      </script>
+
+</body>
+
+
+</html>
