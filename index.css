@@ -36,3 +36,11 @@ li a:hover {
 .active {
     color: whitesmoke;
 }
+
+form {
+    float: left;
+}
+
+div {
+    margin: 1em;
+}

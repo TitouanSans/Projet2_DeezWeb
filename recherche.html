@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Deez Web</title>
-  <link rel="stylesheet" href="index.css"> 
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -14,9 +15,9 @@
   <navbar>
     <ul>
       <li><h1>Deezweb</h1></li>
-      <li><a href="accueil.html">Accueil</a></li>
-      <li><a class="active" href="recherche.html">Rechercher un titre</a></li>
-      <li><a href="favoris.html">Mes favoris</a></li>
+      <li><a href="accueil.html"><i class="fa fa-fw fa-home"></i>Accueil</a></li>
+      <li><a class="active" href="recherche.html"><i class="fa fa-fw fa-search"></i>Rechercher un titre</a></li>
+      <li><a href="favoris.html"><i class="fa fa-fw fa-heart"></i>Mes favoris</a></li>
     </ul>
   </navbar>
 
@@ -24,7 +25,19 @@
         <h2>Recherche</h2>
         <p>Recherchez un titre sur Deezer en utilisant le formulaire suivant :</p>
         <hr>
-        <p>Titre :</p>
+        <form>
+            <label for="fname">Titre :</label>
+                <input type="text" id="fname" name="titre" placeholder="Titre, album, auteur...">
+            <label for="tname">Trier par:</label>
+            <select id="tname" name="trier">
+                <option value="album">Album</option>
+                <option value="artiste">Artiste</option>
+                <option value="titre">Titre</option>
+                <option value="popularite">Popularité</option>
+                <option value="rang">Rang</option>
+            </select>    
+                <input type="submit" value="Go">
+        </form><br>
         <hr>
     </div>
 
